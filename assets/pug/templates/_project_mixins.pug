@@ -1,0 +1,18 @@
+// Button
+
+mixin btn(data) 
+	.btn(class=data.class)
+		if data.link 
+			a(href="#")=data.title
+		else 
+			button(type="button")=data.title
+
+// End button
+
+// Input
+
+mixin input(data)
+	.global_input(class=data.class ? data.class : data.class="form_input")
+		input(type=data.type ? data.type : data.type="text" placeholder=data.place ? data.place : data.place="Ваше имя")
+
+// End mixin input

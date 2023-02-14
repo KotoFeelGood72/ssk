@@ -1,0 +1,82 @@
+.burger.popup(data-id="burger") 
+	.burger_bg.remove 
+	.burger_main 
+		.burger_close.remove 
+			+icon('close')
+		.burger_head 
+			.burger_phone 
+				a(href="#")
+					.burger_phone_icon 
+						+icon('phone')
+					p +7 (812) 649-00-32
+			.burger_mail
+				a(href="#")  
+					.burger_mail_icon 
+						+icon('mail')
+					p 6490032@mail.ru
+		nav.burger_nav 
+			ul.burger_nav_list 
+				-
+					var nav = [
+						{
+							navTitle: 'Главная',
+							navLink: '/',
+						},
+						{
+							navTitle: 'Услуги',
+							navLink: '/service.html',
+							submenu: true,
+						},
+						{
+							navTitle: 'Наши работы',
+							navLink: '/work.html',
+						},
+						{
+							navTitle: 'Отзывы',
+							navLink: '/reviews.html',
+						},
+						{
+							navTitle: 'Контакты',
+							navLink: '/contacts.html',
+						},
+					]
+				each item in nav 
+					if item.submenu 
+						li 
+							a(href=item.navLink)=item.navTitle
+							ul.sub-menu
+								each menuLink in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
+									li 
+										a(href="#")=menuLink
+// End
+.popup.popup_form(data-id="form")
+	.popup_bg.remove 
+	.popup_main.popup_form_main
+		.popup_form_close.remove 
+			+icon('close') 
+		h3 Отправить заявку
+		form.application_form.popup_mod_form(action="")
+			.form_input_group
+				+input({
+					place: 'Имя',
+					class: 'application_input'
+				}) 
+				+input({
+					place: 'Телефон',
+					type: 'tel',
+					class: 'application_input'
+				}) 
+			.btn_submit.btn.btn-border
+				input(type="submit", value="Отправить")
+		.application_notice!='Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="/policy.html" target="_blank">Политику конфиденциальности</a>'
+
+.popup.reviews_popup 
+	.popup_bg.remove 
+	.reviews_main.popup_main
+		.popup_form_close.remove 
+			+icon('close') 
+		.reviews_popup_date 15.09.2021 г.
+		p Выражаем благодарность строительной компании «Преображение», за изготовление четырех металлических дверей, металлической конструкции для подъёма на кровлю, двух стеклопластиковых окон и монтаж данных изделий. Работой и качеством изделий остались довольны, все работы выполнены в срок, указанный в договоре, все работы производились под руководством бригадира компании, несмотря на сложную конструкцию, ребята с легкостью изготовили ее и установили, благодаря чему мы спокойно и без мучений можем подниматься’ на кровлю дома. Отдельное спасибо хотим сказать руководству компании за небольшие, но приятные подарки в виде бесплатных работ по монтажу окон. В дальнейшем планируем сотрудничество с данной компанией, и можем советовать, как добросовестных подрядчиков.
+		ul.reviews_popup_info 
+			each item in ['Братухина И.Б.', 'Жилищный кооператив №14', 'г. Санкт-Петербург, ул. Котина д.4 к.1']
+				li=item

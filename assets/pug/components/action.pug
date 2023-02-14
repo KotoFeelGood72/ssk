@@ -1,0 +1,22 @@
+section.application 
+	.section_in 
+		.application_main 
+			.application_head 
+				h6 Оставьте заявку
+				p Наши менеджеры свяжутся с Вами
+			.application_form_w 
+				form.application_form(action="")
+					.form_input_group
+						+input({
+							place: 'Имя',
+							class: 'application_input'
+						}) 
+						+input({
+							place: 'Телефон',
+							type: 'tel',
+							class: 'application_input'
+						}) 
+					.btn_submit.btn.btn-border
+						input(type="submit", value="Отправить")
+				.application_notice!='Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="/policy.html" target="_blank">Политику конфиденциальности</a>'
+				

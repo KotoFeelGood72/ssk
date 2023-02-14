@@ -1,0 +1,55 @@
+header.header.custom 
+	.section_in 
+		.header_main
+			.header_logo 
+				a(href="/")
+					img(src="i/global/logo.svg", alt="")
+			.header_col_right 
+				nav.header_nav 
+					ul.header_nav_list 
+						-
+							var nav = [
+								{
+									navTitle: 'Главная',
+									navLink: '/',
+								},
+								{
+									navTitle: 'Услуги',
+									navLink: '/service.html',
+									submenu: true,
+								},
+								{
+									navTitle: 'Наши работы',
+									navLink: '/work.html',
+								},
+								{
+									navTitle: 'Отзывы',
+									navLink: '/reviews.html',
+								},
+								{
+									navTitle: 'Контакты',
+									navLink: '/contacts.html',
+								},
+							]
+						each item in nav 
+							if item.submenu 
+								li 
+									a(href=item.navLink)=item.navTitle
+									ul.sub-menu
+										each menuLink in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
+											li 
+												a(href="#")=menuLink
+							else 
+								li 
+									a(href=item.navLink)=item.navTitle
+				.header_info 
+					.header_phone 
+						a(href="#")
+							.header_phone_icon 
+								+icon('phone')
+							p +7 (812) 649-00-32
+					.header_mail
+						a(href="#")  
+							.header_mail_icon 
+								+icon('mail')
+							p 6490032@mail.ru

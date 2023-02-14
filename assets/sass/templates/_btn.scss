@@ -1,0 +1,57 @@
+.wave {
+  background: rgba(255, 255, 255, .4);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave .5s linear;
+  pointer-events: none;
+  position: absolute;
+}
+
+@keyframes wave {
+  100% {
+   transform: scale(2);
+   opacity: 0;
+  }
+}
+
+.btn {
+	border-radius: 0.5rem;
+	overflow: hidden;
+
+	&.btn-fill {
+		a, button, input[type="submit"] {
+			background-color: $blue;
+			color: $white
+		}
+
+		&:hover {
+			a, button, input[type="submit"] {
+				background-color: $trans;
+				color: $blue
+			}
+		}
+	}
+
+	&.btn-border {
+		a, button, input[type="submit"] {
+			background-color: $trans;
+			color: $blue
+		}
+		&:hover {
+			a, button, input[type="submit"] {
+				background-color: $blue;
+				color: $white
+			}
+		}
+	}
+	a, button, input[type="submit"] {
+		@include flex-center;
+		font-size: 1.6rem;
+		font-family: $font_2;
+		padding: 1rem 2rem;
+		border: .2rem solid $blue;
+		transition: all .2s ease;
+		border-radius: 0.5rem;
+		color: $blue;
+	}
+}

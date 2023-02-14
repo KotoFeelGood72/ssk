@@ -1,0 +1,32 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'SSK - Contacts Page'}
+block content_block
+	section.singleService
+		.section_in
+			.singleService_title 
+				h1 Косметический ремонт
+			.singleService_head 
+				.singleService_txt.global_txt 
+					p Lorem ipsum dolor sit amet consectetur. Lorem ac elit cursus sodales eget viverra. Semper leo ipsum condimentum enim. Lectus elit neque non magna cursus proin. Faucibus accumsan praesent nunc leo convallis cursus odio nibh. Posuere dolor leo duis ante a fermentum. Libero habitasse semper proin amet eu. Donec elementum nibh lobortis augue vitae et arcu enim pretium. Elit fermentum mattis commodo et amet. Integer eget sem sed faucibus suspendisse sit iaculis.
+					p Lorem ipsum dolor sit amet consectetur. Lorem ac elit cursus sodales eget viverra. Semper leo ipsum condimentum enim. Lectus elit neque non magna cursus proin. Faucibus accumsan praesent nunc leo convallis cursus odio nibh. Posuere dolor leo duis ante a fermentum. Libero habitasse semper proin amet eu.
+					p Donec elementum nibh lobortis augue vitae et arcu enim pretium. Elit fermentum mattis commodo et amet. Integer eget sem sed faucibus suspendisse sit iaculis.
+				.singleService_img 
+					img(src="i/contacts.jpg", alt="")
+			.singleService_price 
+				h2 Прайс
+				ul.price_list
+					-for(idx = 0; idx < 5; idx++)
+						- let title = ['Потолок', 'Стены', 'Окраска полов', 'Прочие работы', 'Укладка плитки, пол и стены']
+							li.price_item 
+								.price_item_head=title[idx]
+								.price_item_body 
+									p Услуги
+									p Стоимость
+									ul 
+										-for(i = 0; i < 16; i++)
+											li 
+												span Расшивка трещин
+												span от 100 р. за м.п.
+

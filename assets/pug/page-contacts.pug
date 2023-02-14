@@ -1,0 +1,39 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'SSK - Contacts Page'}
+block content_block
+	section.contacts 
+		.section_in 
+			.contacts_main 
+				h1 Контакты
+				.contacts_main_row 
+					.contacts_main_info 
+						ul 
+							li 
+								span Позвонить:
+								a(href="#")
+									.contacts_item_icon 
+										+icon('phone')
+									p +7 (812) 649-00-32
+							li 
+								span Написать на E-mail:
+								a(href="#")
+									.contacts_item_icon 
+										+icon('mail')
+									p 6490032@mail.ru
+							li 
+								span График работы:
+								a(href="#")
+									.contacts_item_icon 
+										+icon('clock')
+									p Пн- Пт: 9:00 - 20:00
+							li 
+								span Адрес:
+								a(href="#")
+									.contacts_item_icon 
+										+icon('phone')
+									p Lorem ipsum dolor sit amet consectetur
+					.contacts_img 
+						img(src="i/contacts.jpg", alt="")
+	include components/action

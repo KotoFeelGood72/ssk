@@ -1,0 +1,31 @@
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+}
+
+.head-mod {
+	h2, h3, h4, h5, h6 {
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: calc(100% + 2rem);
+			width: 5rem;
+			border-bottom: .1rem solid $black;
+		}
+		&:after {
+			content: 'Доверьтесь профессионалам';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: calc(100% + 2rem);
+			width: 5rem;
+			font-size: 2.2rem;
+			font-family: $font_1;
+			width: 100%;
+		}
+	}
+
+}

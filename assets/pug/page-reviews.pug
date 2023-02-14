@@ -1,0 +1,21 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'SSK - Reviews Page'}
+block content_block
+	section.reviews 
+		.section_in 
+			.reviews_main 
+				h1 Отзывы
+			ul.reviews_grid
+				-for(i = 0; i < 8; i++)
+					li.reviews_item 
+						a(href="#")
+							.reviews_item_img 
+								img(src=`reviews-${i}.jpg`, alt="")
+							+btn({
+								title: 'Читать текст отзыва',
+								class: 'btn-border'
+							})
+			.reviews_more 
+				a(href="#") Посмотреть еще 

@@ -1,0 +1,102 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: $header;
+	width: 100%;
+	will-change: transform;
+	@include z-index(header);
+	font-size: 2.2rem;
+	background: url('../../i/global/header_bg.svg') center/cover no-repeat;
+
+}
+
+.custom-mod {
+	.header {
+		background: none;
+		a {
+			color: $white;
+		}
+	}
+	.header_col_right {
+		align-items: flex-start;
+	}
+	.header_logo {
+		margin-right: 19.6rem;
+	}
+
+	.header_main {
+		padding-top: 5rem;
+		align-items: flex-start
+	}
+
+}
+
+.header {
+}
+.section_in {
+}
+.header_main {
+	@include flex-space;
+}
+.header_logo {
+}
+.header_col_right {
+	@include flex-start;
+}
+.header_nav {
+}
+.header_nav_list {
+	@include flex-start;
+	margin-right: 6rem;
+	li {
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+}
+.sub-menu {
+	display: none;
+}
+.header_info {
+	a {
+		@include flex-start;
+	}
+}
+.header_phone {
+	font-family: $font_2;
+	margin-bottom: 0.8rem;
+}
+.header_phone_icon {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	color: $orange;
+	background-color: $white;
+	@include flex-center;
+	margin-right: 1rem;
+}
+.icon {
+}
+.icon-phone {
+}
+.header_mail {
+	a {
+		justify-content: flex-end;
+		font-size: 1.6rem;
+	}
+}
+.header_mail_icon {
+	margin-right: 1rem;
+}
+.icon-mail {
+}
+
+.header {
+
+
+	&.custom {
+
+		margin-right: 15rem;
+	}
+}

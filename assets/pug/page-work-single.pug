@@ -1,0 +1,45 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'SSK - Work Page Single'}
+block content_block
+	section.workSingle 
+		.section_in 
+			.workSingle_head 
+				.workSingle_back 
+					a(href="#") назад
+				h1 Косметический ремонт лифтовых холлов
+			.workSingle_main
+				.workSingle_slider_w 
+					.workSingle_thumbSlider.swiper
+						.workThumbs_nav 
+							.workThumbs_prev 
+								+icon('up')
+							.workThumbs_next 
+								+icon('down')
+						.swiper-wrapper
+							-for(i = 0; i < 6; i++) 
+								.swiper-slide 
+									.thumbs_slide 
+										img(src="i/work/main.jpg", alt="")
+					.workSingle_slider.swiper 
+						.swiper-wrapper
+							-for(i = 0; i < 6; i++) 
+								.swiper-slide 
+									.workSingle_slide
+										a(href="i/work/main.jpg") 
+											img(src="i/work/main.jpg", alt="")
+				.workSingle_description 
+					p На данном объекте нами были выполнены работы по косметическому ремонту лифтовых холлов 12-ти этажей, в одной парадной многоквартирного дома.
+					p Этапы работ:
+					ul 
+						li Снятие намела с поверхности потолков.
+						li Расшивка и ремонт трещин потолков и стен.
+						li Нанесение колерованной декоративной штукатурки на поверхность стен.
+						li Укладка керамогранита на поверхность стен в мусорных холлах.
+						li Окраска труб, мусорных клапанов и прочего эмалью.
+				.work_item_address 
+					.work_itemAddress_icon 
+						+icon('address')
+					p улица Сикейроса, д.13
+	include components/action
