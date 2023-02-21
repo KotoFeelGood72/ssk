@@ -2,16 +2,16 @@
 	.burger_bg.remove 
 	.burger_main 
 		.burger_close.remove 
-			+icon('close')
+			img(src="i/global/close-white.svg", alt="")
 		.burger_head 
-			.burger_phone 
+			.header_phone 
 				a(href="#")
-					.burger_phone_icon 
-						+icon('phone')
+					.header_phone_icon 
+						+icon('call')
 					p +7 (812) 649-00-32
-			.burger_mail
+			.header_mail
 				a(href="#")  
-					.burger_mail_icon 
+					.header_mail_icon 
 						+icon('mail')
 					p 6490032@mail.ru
 		nav.burger_nav 
@@ -48,15 +48,18 @@
 								each menuLink in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
 									li 
 										a(href="#")=menuLink
+					else 
+						li 
+							a(href=item.navLink)=item.navTitle
 // End
 .popup.popup_form(data-id="form")
 	.popup_bg.remove 
 	.popup_main.popup_form_main
 		.popup_form_close.remove 
-			+icon('close') 
+			img(src="i/global/close.svg", alt="")
 		h3 Отправить заявку
 		form.application_form.popup_mod_form(action="")
-			.form_input_group
+			.form_input_group.grid-2
 				+input({
 					place: 'Имя',
 					class: 'application_input'
@@ -70,11 +73,11 @@
 				input(type="submit", value="Отправить")
 		.application_notice!='Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="/policy.html" target="_blank">Политику конфиденциальности</a>'
 
-.popup.reviews_popup 
+.popup.reviews_popup(data-id="reviews")  
 	.popup_bg.remove 
-	.reviews_main.popup_main
+	.reviews_popup_main.popup_main
 		.popup_form_close.remove 
-			+icon('close') 
+			img(src="i/global/close.svg", alt="")
 		.reviews_popup_date 15.09.2021 г.
 		p Выражаем благодарность строительной компании «Преображение», за изготовление четырех металлических дверей, металлической конструкции для подъёма на кровлю, двух стеклопластиковых окон и монтаж данных изделий. Работой и качеством изделий остались довольны, все работы выполнены в срок, указанный в договоре, все работы производились под руководством бригадира компании, несмотря на сложную конструкцию, ребята с легкостью изготовили ее и установили, благодаря чему мы спокойно и без мучений можем подниматься’ на кровлю дома. Отдельное спасибо хотим сказать руководству компании за небольшие, но приятные подарки в виде бесплатных работ по монтажу окон. В дальнейшем планируем сотрудничество с данной компанией, и можем советовать, как добросовестных подрядчиков.
 		ul.reviews_popup_info 

@@ -9,7 +9,7 @@ doctype
 html(lang="en")
 	head
 		+head(array)
-	body(class= array.body_class)
+	body(class= array.body_class id="upLink")
 		include global/header
 		.wrapper(class= array.layout_mod)
 			.base(class= array.layout_mod)
@@ -19,3 +19,4 @@ html(lang="en")
 		block local_popup
 			include global/popup
 			include global/alert
+			include global/upLink

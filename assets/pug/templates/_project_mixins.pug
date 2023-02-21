@@ -1,10 +1,11 @@
 // Button
 
 mixin btn(data) 
-	.btn(class=data.class)
-		if data.link 
+	if data.link 
+		.btn(class=data.class)
 			a(href="#")=data.title
-		else 
+	else
+		.btn(class=data.class data-target="form")
 			button(type="button")=data.title
 
 // End button

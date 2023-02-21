@@ -1,0 +1,152 @@
+.workSingle {
+}
+.global_section {
+}
+.section_in {
+}
+.workSingle_head {
+
+	h1 {
+		font-size: 2.8rem;
+	}
+	margin-bottom: 8rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
+
+	@include bp($point_4) {
+		margin-bottom: 3rem;
+	}
+}
+.workSingle_back {
+	margin-bottom: 2rem;
+	a {
+		position: relative;
+		padding-left: 1.3rem;
+		color: $blue;
+		&:before {
+			top: 59%;
+			position: absolute;
+			left: 0;
+			transform: translateY(-50%);
+			width: 0;
+			height: 0;
+			border: 0 solid transparent;
+			border-width: .55rem .6rem .55rem 0;
+			border-color: transparent $blue transparent transparent;
+			content: '';
+		}
+	}
+}
+.workSingle_main {
+	@include flex-start;
+	align-items: flex-start;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
+}
+.workSingle_thumbSlider_w {
+	position: relative;
+	height: 100%;
+	margin-right: 2rem;
+	@include flex-center;
+	flex-direction: column;
+	@include bp($point_4) {
+		order: 2;
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+	}
+}
+.workSingle_slider_w {
+	@include flex-start;
+	max-width: 58.2rem;
+	width: 100%;
+	margin-right: 8rem;
+	height: 61.3rem;
+	@include bp($point_2) {
+		margin: 0 0 5rem 0;
+	}
+	@include bp($point_4) {
+		flex-direction: column;
+		max-width: 50rem;
+		height: auto;
+	}
+}
+.workSingle_thumbSlider {
+	width: 9.2rem;
+	margin: 0!important;
+	height: 100%;
+	max-height: 57rem;
+	user-select: none;
+
+	@include bp($point_4) {
+		width: 100%;
+		height: auto;
+	}
+	.swiper-slide-active {
+		.thumbs_slide {
+			border: .2rem solid $blue;
+		}
+	}
+}
+
+.workSingle_slider  { 
+	@include bp($point_4) {
+		margin-bottom: 2rem;
+	}
+}
+.swiper {
+}
+.workThumbs_nav {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 100%;
+	@include flex-space;
+	flex-direction: column;
+
+	@include bp($point_4) {
+		display: none;
+	}
+
+	&>div {
+		cursor: pointer;
+		svg {
+			fill: none;
+			stroke-width: .3rem;
+			stroke: $grey;
+		}
+	}
+}
+
+.thumbs_slide {
+	height: 9.2rem;
+	cursor: pointer;
+	img {
+		height: 100%;
+	}
+}
+.workSingle_slider {
+	max-width: 46rem;
+	@include bp($point_4) {
+		max-width: 100%;
+	}
+}
+.workSingle_slide {
+}
+.workSingle_description {
+	margin-bottom: 3.2rem;
+}
+
+.work_item_address {
+	@include flex-start;
+	color: $grey;
+}
+.work_itemAddress_icon {
+	margin-right: 1rem;
+}
+.icon-address {
+}

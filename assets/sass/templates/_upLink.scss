@@ -1,0 +1,31 @@
+.upLink {
+	position: fixed;
+	bottom: 5rem;
+	right: 5rem;
+	width: 5rem;
+	height: 5rem;
+	background-color: $blue;
+	color: $white;
+	border-radius: 100%;
+	@include flex-center;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10rem);
+	transition: all .3s ease;
+
+	@include bp($point_2) {
+		display: none;
+	}
+
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	svg {
+		fill: none;
+		stroke-width: .2rem;
+		stroke: $white;
+	}
+}

@@ -3,7 +3,7 @@ extends _layout
 block vars
 	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'SSK - Work Page'}
 block content_block
-	section.work 
+	section.work.global_section 
 		.section_in
 			.work_main 
 				.work_head 
@@ -13,7 +13,7 @@ block content_block
 							li 
 								a(href="#")=item
 				.work_main 
-					ul.work_grid 
+					ul.work_grid.grid-2
 						-for(i = 0; i < 8; i++)
 							- let workTitle = ['Косметический ремонт лифтовых холлов', 'Косметический ремонт парадных', 'Косметический ремонт парадных', 'Косметический ремонт парадных', 'Косметический ремонт парадных', 'Косметический ремонт парадной', 'Косметический ремонт парадных', 'Ремонт квартиры на Энгельса']
 							- let workAddress = ['улица Сикейроса, д.13', 'Улица Замшина, д.58 к.1', 'Улица Морской Пехоты, д.2', 'Улица Ярослава Гашека, д.9 к.1', 'Проспект Суздальский, д.5 к.1', 'Проспект Комендантский, д.34 к.1', 'Проспект Комендантский, д.35 к.2', 'Проспект Энгельса']
@@ -24,7 +24,7 @@ block content_block
 											p На данном объекте нами были выполнены работы по косметическому ремонту 10-ти (десяти) парадных МКД.
 											.work_item_address 
 												.work_itemAddress_icon 
-													+icon('address')
+													+icon('location')
 												p=workAddress[i]
 											+btn({
 												title: 'Подробнее',

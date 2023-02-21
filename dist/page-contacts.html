@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" media="all" href="styles/main_global.css"/>
   </head>
-  <body>
+  <body id="upLink">
     <header class="header"> 
       <div class="section_in"> 
         <div class="header_main">
@@ -56,12 +56,15 @@
                   <p>6490032@mail.ru</p></a></div>
             </div>
           </div>
+          <div class="header_burger_w">
+            <div class="header_burger trigger" data-target="burger"><span> </span><span> </span><span> </span></div>
+          </div>
         </div>
       </div>
     </header>
     <div class="wrapper">
       <div class="base">
-        <section class="contacts"> 
+        <section class="contacts global_section"> 
           <div class="section_in"> 
             <div class="contacts_main"> 
               <h1>Контакты</h1>
@@ -70,29 +73,29 @@
                   <ul> 
                     <li> <span>Позвонить:</span><a href="#">
                         <div class="contacts_item_icon"> 
-                          <svg class="icon icon-phone ">
-                            <use xlink:href="i/sprite/sprite.svg#phone"></use>
+                          <svg class="icon icon-call-contacts ">
+                            <use xlink:href="i/sprite/sprite.svg#call-contacts"></use>
                           </svg>
                         </div>
                         <p>+7 (812) 649-00-32</p></a></li>
                     <li> <span>Написать на E-mail:</span><a href="#">
                         <div class="contacts_item_icon"> 
-                          <svg class="icon icon-mail ">
-                            <use xlink:href="i/sprite/sprite.svg#mail"></use>
+                          <svg class="icon icon-mail-contacts ">
+                            <use xlink:href="i/sprite/sprite.svg#mail-contacts"></use>
                           </svg>
                         </div>
                         <p>6490032@mail.ru</p></a></li>
                     <li> <span>График работы:</span><a href="#">
                         <div class="contacts_item_icon"> 
-                          <svg class="icon icon-clock ">
-                            <use xlink:href="i/sprite/sprite.svg#clock"></use>
+                          <svg class="icon icon-clock-contacts ">
+                            <use xlink:href="i/sprite/sprite.svg#clock-contacts"></use>
                           </svg>
                         </div>
                         <p>Пн- Пт: 9:00 - 20:00</p></a></li>
                     <li> <span>Адрес:</span><a href="#">
                         <div class="contacts_item_icon"> 
-                          <svg class="icon icon-phone ">
-                            <use xlink:href="i/sprite/sprite.svg#phone"></use>
+                          <svg class="icon icon-map ">
+                            <use xlink:href="i/sprite/sprite.svg#map"></use>
                           </svg>
                         </div>
                         <p>Lorem ipsum dolor sit amet consectetur</p></a></li>
@@ -103,16 +106,15 @@
             </div>
           </div>
         </section>
-        <section class="application"> 
+        <section class="application animationBlock"> 
           <div class="section_in"> 
             <div class="application_main"> 
-              <div class="application_head"> 
+              <div class="application_head head-mod animationEl">
                 <h6>Оставьте заявку</h6>
-                <p>Наши менеджеры свяжутся с Вами</p>
               </div>
-              <div class="application_form_w"> 
+              <div class="application_form_w animationEl"> 
                 <form class="application_form" action="">
-                  <div class="form_input_group">
+                  <div class="form_input_group grid-2">
                     <div class="global_input application_input">
                       <input type="text" placeholder="Имя"/>
                     </div>
@@ -120,7 +122,7 @@
                       <input type="tel" placeholder="Телефон"/>
                     </div>
                   </div>
-                  <div class="btn_submit btn btn-border">
+                  <div class="btn_submit btn btn-border btn-border-white">
                     <input type="submit" value="Отправить">
                   </div>
                 </form>
@@ -134,7 +136,7 @@
         <div class="section_in"> 
           <div class="footer_main">
             <div class="footer_info">
-              <div class="footer_logo"><img src="i/global/logo.svg" alt=""></div>
+              <div class="footer_logo"><a href="#"> <img src="i/global/logo.svg" alt=""></a></div>
               <div class="footer_about"> <a href="#">Политика конфиденциальности</a>
                 <p>© 2022 Все права защищены</p>
                 <div class="footer_brand"> <a href="#"><img src="i/global/brand.png" alt=""></a></div>
@@ -143,6 +145,10 @@
             <div class="footer_nav_w"> 
               <nav class="footer_nav"> 
                 <ul class="footer_nav_list"> 
+                  <li> <a href="/">Главная</a></li>
+                  <li> <a href="/work.html">Наши работы</a></li>
+                  <li> <a href="/reviews.html">Отзывы</a></li>
+                  <li> <a href="/contacts.html">Контакты</a></li>
                   <li> <a href="/service.html">Услуги</a>
                     <ul class="sub-menu">
                       <li> <a href="#">Ремонт межпанельных швов</a></li>
@@ -160,8 +166,8 @@
             <div class="footer_contacts"> 
               <div class="footer_phone"> <a href="#">
                   <div class="footer_phone_icon"> 
-                    <svg class="icon icon-phone ">
-                      <use xlink:href="i/sprite/sprite.svg#phone"></use>
+                    <svg class="icon icon-call ">
+                      <use xlink:href="i/sprite/sprite.svg#call"></use>
                     </svg>
                   </div>
                   <p>+7 (812) 649-00-32</p></a></div>
@@ -196,21 +202,17 @@
     <div class="burger popup" data-id="burger"> 
       <div class="burger_bg remove"> </div>
       <div class="burger_main"> 
-        <div class="burger_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+        <div class="burger_close remove"> <img src="i/global/close-white.svg" alt=""></div>
         <div class="burger_head"> 
-          <div class="burger_phone"> <a href="#">
-              <div class="burger_phone_icon"> 
-                <svg class="icon icon-phone ">
-                  <use xlink:href="i/sprite/sprite.svg#phone"></use>
+          <div class="header_phone"> <a href="#">
+              <div class="header_phone_icon"> 
+                <svg class="icon icon-call ">
+                  <use xlink:href="i/sprite/sprite.svg#call"></use>
                 </svg>
               </div>
               <p>+7 (812) 649-00-32</p></a></div>
-          <div class="burger_mail"><a href="#"> 
-              <div class="burger_mail_icon"> 
+          <div class="header_mail"><a href="#"> 
+              <div class="header_mail_icon"> 
                 <svg class="icon icon-mail ">
                   <use xlink:href="i/sprite/sprite.svg#mail"></use>
                 </svg>
@@ -219,6 +221,7 @@
         </div>
         <nav class="burger_nav"> 
           <ul class="burger_nav_list"> 
+            <li> <a href="/">Главная</a></li>
             <li> <a href="/service.html">Услуги</a>
               <ul class="sub-menu">
                 <li> <a href="#">Ремонт межпанельных швов</a></li>
@@ -230,6 +233,9 @@
                 <li> <a href="#">Изготовление и монтаж металлических изделий</a></li>
               </ul>
             </li>
+            <li> <a href="/work.html">Наши работы</a></li>
+            <li> <a href="/reviews.html">Отзывы</a></li>
+            <li> <a href="/contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -238,14 +244,10 @@
     <div class="popup popup_form" data-id="form">
       <div class="popup_bg remove"> </div>
       <div class="popup_main popup_form_main">
-        <div class="popup_form_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+        <div class="popup_form_close remove"> <img src="i/global/close.svg" alt=""></div>
         <h3>Отправить заявку</h3>
         <form class="application_form popup_mod_form" action="">
-          <div class="form_input_group">
+          <div class="form_input_group grid-2">
             <div class="global_input application_input">
               <input type="text" placeholder="Имя"/>
             </div>
@@ -260,14 +262,10 @@
         <div class="application_notice">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="/policy.html" target="_blank">Политику конфиденциальности</a></div>
       </div>
     </div>
-    <div class="popup reviews_popup"> 
+    <div class="popup reviews_popup" data-id="reviews"> 
       <div class="popup_bg remove"> </div>
-      <div class="reviews_main popup_main">
-        <div class="popup_form_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+      <div class="reviews_popup_main popup_main">
+        <div class="popup_form_close remove"> <img src="i/global/close.svg" alt=""></div>
         <div class="reviews_popup_date">15.09.2021 г.</div>
         <p>Выражаем благодарность строительной компании «Преображение», за изготовление четырех металлических дверей, металлической конструкции для подъёма на кровлю, двух стеклопластиковых окон и монтаж данных изделий. Работой и качеством изделий остались довольны, все работы выполнены в срок, указанный в договоре, все работы производились под руководством бригадира компании, несмотря на сложную конструкцию, ребята с легкостью изготовили ее и установили, благодаря чему мы спокойно и без мучений можем подниматься’ на кровлю дома. Отдельное спасибо хотим сказать руководству компании за небольшие, но приятные подарки в виде бесплатных работ по монтажу окон. В дальнейшем планируем сотрудничество с данной компанией, и можем советовать, как добросовестных подрядчиков.</p>
         <ul class="reviews_popup_info"> 
@@ -290,6 +288,11 @@
         <div class="alert_icon">
            <svg class="checkmark" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="alert__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
       </div>
+    </div>
+    <div class="upLink"> 
+      <svg class="icon icon-prev ">
+        <use xlink:href="i/sprite/sprite.svg#prev"></use>
+      </svg>
     </div>
   </body>
 </html>

@@ -14,7 +14,7 @@
     <meta name="format-detection" content="telephone=no"/>
     <link rel="stylesheet" media="all" href="styles/main_global.css"/>
   </head>
-  <body class="custom-mod">
+  <body class="custom-mod" id="upLink">
     <header class="header"> 
       <div class="section_in"> 
         <div class="header_main">
@@ -56,6 +56,9 @@
                   <p>6490032@mail.ru</p></a></div>
             </div>
           </div>
+          <div class="header_burger_w">
+            <div class="header_burger trigger" data-target="burger"><span> </span><span> </span><span> </span></div>
+          </div>
         </div>
       </div>
     </header>
@@ -66,163 +69,292 @@
             <div class="hero_main">
               <div class="hero_col_left"> 
                 <ul class="hero_list"> 
-                  <li><a href="#" data-title="Ремонт межпанельных швов">Ремонт межпанельных швов</a></li>
-                  <li><a href="#" data-title="Ремонт фасадов и кровли">Ремонт фасадов и кровли</a></li>
-                  <li><a href="#" data-title="Косметический ремонт любой сложности">Косметический ремонт любой сложности</a></li>
-                  <li><a href="#" data-title="Ремонт коммерческих помещений">Ремонт коммерческих помещений</a></li>
-                  <li><a href="#" data-title="Производство и монтаж — окон и дверей">Производство и монтаж — окон и дверей</a></li>
-                  <li><a href="#" data-title="Отмостка — асфальтирование — ямочный ремонт">Отмостка — асфальтирование — ямочный ремонт</a></li>
-                  <li><a href="#" data-title="Изготовление и монтаж металлических изделий">Изготовление и монтаж металлических изделий</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Ремонт межпанельных швов" data-tab="heroTab_0">Ремонт межпанельных швов</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Ремонт фасадов и кровли" data-tab="heroTab_1">Ремонт фасадов и кровли</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Косметический ремонт любой сложности" data-tab="heroTab_2">Косметический ремонт любой сложности</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Ремонт коммерческих помещений" data-tab="heroTab_3">Ремонт коммерческих помещений</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Производство и монтаж — окон и дверей" data-tab="heroTab_4">Производство и монтаж — окон и дверей</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Отмостка — асфальтирование — ямочный ремонт" data-tab="heroTab_5">Отмостка — асфальтирование — ямочный ремонт</a></li>
+                  <li><a class="hero_tab_link" href="#" data-title="Изготовление и монтаж металлических изделий" data-tab="heroTab_6">Изготовление и монтаж металлических изделий</a></li>
                 </ul>
               </div>
-              <div class="hero_col_right"> 
-                <div class="hero_card"> 
-                  <h2>Ремонт межпанельных швов</h2>
-                  <div class="hero_card_txt global_txt"> 
-                    <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
-                  </div>
-                  <div class="hero_card_bottom">
-                    <div class="parent_btn">
-                      <div class="btn hero_btn btn-fill">
-                        <button type="button">Заказать услугу</button>
+              <div class="hero_col_right">
+                <ul class="heroTabContent_list">
+                  <li class="hero_tab_content" data-tab="heroTab_0"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
                       </div>
                     </div>
-                    <div class="parent_btn">
-                      <div class="btn hero_link btn-border"><a href="#">Подробнее</a>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_1"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_2"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_3"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_4"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_5"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                  <li class="hero_tab_content" data-tab="heroTab_6"> 
+                    <div class="hero_card"> 
+                      <h2>Ремонт межпанельных швов</h2>
+                      <div class="hero_card_txt global_txt"> 
+                        <p>Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.</p>
+                      </div>
+                      <div class="hero_card_bottom">
+                        <div class="parent_btn">
+                          <div class="btn hero_btn btn-fill trigger" data-target="form">
+                            <button type="button">Заказать услугу</button>
+                          </div>
+                        </div>
+                        <div class="parent_btn">
+                          <div class="btn hero_link btn-border"><a href="#">Подробнее</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero_img"> <img src="i/home/hero.jpg" alt=""></div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
-        <section class="ours"> 
+        <section class="ours animationBlock"> 
           <div class="section_in"> 
-            <div class="ours_main"> 
-              <div class="ours_head head-mod"> 
+            <div class="ours_main animationEl">
+              <div class="ours_head head-mod">
                 <h2>Наши преимущества</h2>
               </div>
-              <ul class="ours_grid"> 
+              <ul class="ours_grid grid-3">
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Оплата и цены</h3>
+                    <h3 class="small-title">Оплата и цены</h3>
                     <p>Мы предоставляем беспроцентную рассрочку, обсуждаем условия рассрочки и оплаты с каждым индивидуально. Адекватные цены на работы, без экономии на материалах.</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-0 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-0"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-0 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-0"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Сервис 24/7</h3>
+                    <h3 class="small-title">Сервис 24/7</h3>
                     <p>С вами на связи будет наш специалист, готовый ответить на ваши вопросы в любое время дня и ночи, так как спокойствие наших клиентов для нас, важнее всего.</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-1 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-1"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-1 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-1"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Опытные рабочие</h3>
+                    <h3 class="small-title">Опытные рабочие</h3>
                     <p>У нас в штате более 20-ти работников, с большим опытом и высокой квалификацией, имеющие культуру поведения и общения на объекте.</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-2 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-2"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-2 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-2"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Выезд специалиста</h3>
+                    <h3 class="small-title">Выезд специалиста</h3>
                     <p>Бесплатный и срочный</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-3 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-3"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-3 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-3"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Расчет сметы</h3>
+                    <h3 class="small-title">Расчет сметы</h3>
                     <p>Бесплатный и на следующий день</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-4 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-4"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-4 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-4"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
                 <li class="ours_item"> 
                   <div class="ours_item_content"> 
-                    <h3>Рассрочка</h3>
+                    <h3 class="small-title">Рассрочка</h3>
                     <p>Беспроцентная и индивидуальная</p>
                   </div>
-                  <div class="ours_item_icon"> 
-                    <svg class="icon icon-ours-5 ">
-                      <use xlink:href="i/sprite/sprite.svg#ours-5"></use>
-                    </svg>
+                  <div class="ours_item_icon_w">
+                    <div class="ours_item_icon">
+                      <svg class="icon icon-ours-5 ">
+                        <use xlink:href="i/sprite/sprite.svg#ours-5"></use>
+                      </svg>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <section class="us"> 
+        <section class="us animationBlock"> 
           <div class="section_in"> 
             <div class="us_main"> 
               <div class="us_content"> 
-                <div class="us_content_head"> 
+                <div class="us_content_head animationEl"> 
                   <h3>Почему именно МЫ?</h3>
                   <p>Строительная компания "Преображение" не просто делает свою работу качественно и в срок, а Преображает все то, за что берется, в самую лучшую сторону.</p>
                 </div>
-                <ul class="us_list">
-                  <li>Мы всегда готовы вместе с вами посетить наши объекты, посмотреть процесс выполнения работ или уже выполненные нами работы, а также получить отзывы о нас и нашей работе, из первых уст.</li>
-                  <li>Мы работаем честно с нашими клиентами, на взаимопонимании и доверии друг к другу, у нас прозрачные договоры и сметы, так как наша главная цель долгосрочное сотрудничество.</li>
-                  <li>Мы работаем с 2020-го года, за все время нашего существования, мы зарекомендовали себя как добросовестного подрядчика которому можно доверять.</li>
-                  <li>Мы работаем только с качественными стройматериалами проверенными временем, поэтому не боимся давать гарантию на наши работы.</li>
+                <ul class="us_list grid-2">
+                  <li class="animationEl">Мы всегда готовы вместе с вами посетить наши объекты, посмотреть процесс выполнения работ или уже выполненные нами работы, а также получить отзывы о нас и нашей работе, из первых уст.</li>
+                  <li class="animationEl">Мы работаем честно с нашими клиентами, на взаимопонимании и доверии друг к другу, у нас прозрачные договоры и сметы, так как наша главная цель долгосрочное сотрудничество.</li>
+                  <li class="animationEl">Мы работаем с 2020-го года, за все время нашего существования, мы зарекомендовали себя как добросовестного подрядчика которому можно доверять.</li>
+                  <li class="animationEl">Мы работаем только с качественными стройматериалами проверенными временем, поэтому не боимся давать гарантию на наши работы.</li>
                 </ul>
               </div>
-              <div class="us_img"> <img src="i/home/us.jpg" alt=""></div>
+              <div class="us_img animationEl"> <img src="i/home/us.jpg" alt=""></div>
             </div>
           </div>
         </section>
-        <section class="step"> 
+        <section class="step animationBlock">
           <div class="section_in"> 
             <div class="step_main"> 
-              <div class="step_head"> 
+              <div class="step_head animationEl"> 
                 <h4>Работать с нами ЛЕГКО</h4>
               </div>
-              <ul class="step_list"> 
-                <li class="step_item"> 
+              <ul class="step_list grid-4"> 
+                <li class="step_item animationEl"> 
                   <div class="step_item_img"> <img src="i/global/step-0.svg"></div>
                   <div class="step_item_content"> 
                     <h4>Заявка</h4>
                     <p>Вы оставляете заявку или звоните нам, наш специалист выезжает к вам для замераи обсуждения деталей</p>
                   </div>
                 </li>
-                <li class="step_item"> 
+                <li class="step_item animationEl"> 
                   <div class="step_item_img"> <img src="i/global/step-1.svg"></div>
                   <div class="step_item_content"> 
                     <h4>Смета</h4>
                     <p>Мы составляем смету на работы с учетом материалов, подписываем договор, получаем от вас предоплату</p>
                   </div>
                 </li>
-                <li class="step_item"> 
+                <li class="step_item animationEl"> 
                   <div class="step_item_img"> <img src="i/global/step-2.svg"></div>
                   <div class="step_item_content"> 
                     <h4>Работы</h4>
                     <p>Бригада опытных мастеров выполняет работы согласно смете, под руководством нашего технического специалиста</p>
                   </div>
                 </li>
-                <li class="step_item"> 
+                <li class="step_item animationEl"> 
                   <div class="step_item_img"> <img src="i/global/step-3.svg"></div>
                   <div class="step_item_content"> 
                     <h4>Результат</h4>
@@ -233,16 +365,15 @@
             </div>
           </div>
         </section>
-        <section class="application"> 
+        <section class="application animationBlock"> 
           <div class="section_in"> 
             <div class="application_main"> 
-              <div class="application_head"> 
+              <div class="application_head head-mod animationEl">
                 <h6>Оставьте заявку</h6>
-                <p>Наши менеджеры свяжутся с Вами</p>
               </div>
-              <div class="application_form_w"> 
+              <div class="application_form_w animationEl"> 
                 <form class="application_form" action="">
-                  <div class="form_input_group">
+                  <div class="form_input_group grid-2">
                     <div class="global_input application_input">
                       <input type="text" placeholder="Имя"/>
                     </div>
@@ -250,7 +381,7 @@
                       <input type="tel" placeholder="Телефон"/>
                     </div>
                   </div>
-                  <div class="btn_submit btn btn-border">
+                  <div class="btn_submit btn btn-border btn-border-white">
                     <input type="submit" value="Отправить">
                   </div>
                 </form>
@@ -264,7 +395,7 @@
         <div class="section_in"> 
           <div class="footer_main">
             <div class="footer_info">
-              <div class="footer_logo"><img src="i/global/logo.svg" alt=""></div>
+              <div class="footer_logo"><a href="#"> <img src="i/global/logo.svg" alt=""></a></div>
               <div class="footer_about"> <a href="#">Политика конфиденциальности</a>
                 <p>© 2022 Все права защищены</p>
                 <div class="footer_brand"> <a href="#"><img src="i/global/brand.png" alt=""></a></div>
@@ -273,6 +404,10 @@
             <div class="footer_nav_w"> 
               <nav class="footer_nav"> 
                 <ul class="footer_nav_list"> 
+                  <li> <a href="/">Главная</a></li>
+                  <li> <a href="/work.html">Наши работы</a></li>
+                  <li> <a href="/reviews.html">Отзывы</a></li>
+                  <li> <a href="/contacts.html">Контакты</a></li>
                   <li> <a href="/service.html">Услуги</a>
                     <ul class="sub-menu">
                       <li> <a href="#">Ремонт межпанельных швов</a></li>
@@ -290,8 +425,8 @@
             <div class="footer_contacts"> 
               <div class="footer_phone"> <a href="#">
                   <div class="footer_phone_icon"> 
-                    <svg class="icon icon-phone ">
-                      <use xlink:href="i/sprite/sprite.svg#phone"></use>
+                    <svg class="icon icon-call ">
+                      <use xlink:href="i/sprite/sprite.svg#call"></use>
                     </svg>
                   </div>
                   <p>+7 (812) 649-00-32</p></a></div>
@@ -326,21 +461,17 @@
     <div class="burger popup" data-id="burger"> 
       <div class="burger_bg remove"> </div>
       <div class="burger_main"> 
-        <div class="burger_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+        <div class="burger_close remove"> <img src="i/global/close-white.svg" alt=""></div>
         <div class="burger_head"> 
-          <div class="burger_phone"> <a href="#">
-              <div class="burger_phone_icon"> 
-                <svg class="icon icon-phone ">
-                  <use xlink:href="i/sprite/sprite.svg#phone"></use>
+          <div class="header_phone"> <a href="#">
+              <div class="header_phone_icon"> 
+                <svg class="icon icon-call ">
+                  <use xlink:href="i/sprite/sprite.svg#call"></use>
                 </svg>
               </div>
               <p>+7 (812) 649-00-32</p></a></div>
-          <div class="burger_mail"><a href="#"> 
-              <div class="burger_mail_icon"> 
+          <div class="header_mail"><a href="#"> 
+              <div class="header_mail_icon"> 
                 <svg class="icon icon-mail ">
                   <use xlink:href="i/sprite/sprite.svg#mail"></use>
                 </svg>
@@ -349,6 +480,7 @@
         </div>
         <nav class="burger_nav"> 
           <ul class="burger_nav_list"> 
+            <li> <a href="/">Главная</a></li>
             <li> <a href="/service.html">Услуги</a>
               <ul class="sub-menu">
                 <li> <a href="#">Ремонт межпанельных швов</a></li>
@@ -360,6 +492,9 @@
                 <li> <a href="#">Изготовление и монтаж металлических изделий</a></li>
               </ul>
             </li>
+            <li> <a href="/work.html">Наши работы</a></li>
+            <li> <a href="/reviews.html">Отзывы</a></li>
+            <li> <a href="/contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -368,14 +503,10 @@
     <div class="popup popup_form" data-id="form">
       <div class="popup_bg remove"> </div>
       <div class="popup_main popup_form_main">
-        <div class="popup_form_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+        <div class="popup_form_close remove"> <img src="i/global/close.svg" alt=""></div>
         <h3>Отправить заявку</h3>
         <form class="application_form popup_mod_form" action="">
-          <div class="form_input_group">
+          <div class="form_input_group grid-2">
             <div class="global_input application_input">
               <input type="text" placeholder="Имя"/>
             </div>
@@ -390,14 +521,10 @@
         <div class="application_notice">Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="/policy.html" target="_blank">Политику конфиденциальности</a></div>
       </div>
     </div>
-    <div class="popup reviews_popup"> 
+    <div class="popup reviews_popup" data-id="reviews"> 
       <div class="popup_bg remove"> </div>
-      <div class="reviews_main popup_main">
-        <div class="popup_form_close remove"> 
-          <svg class="icon icon-close ">
-            <use xlink:href="i/sprite/sprite.svg#close"></use>
-          </svg>
-        </div>
+      <div class="reviews_popup_main popup_main">
+        <div class="popup_form_close remove"> <img src="i/global/close.svg" alt=""></div>
         <div class="reviews_popup_date">15.09.2021 г.</div>
         <p>Выражаем благодарность строительной компании «Преображение», за изготовление четырех металлических дверей, металлической конструкции для подъёма на кровлю, двух стеклопластиковых окон и монтаж данных изделий. Работой и качеством изделий остались довольны, все работы выполнены в срок, указанный в договоре, все работы производились под руководством бригадира компании, несмотря на сложную конструкцию, ребята с легкостью изготовили ее и установили, благодаря чему мы спокойно и без мучений можем подниматься’ на кровлю дома. Отдельное спасибо хотим сказать руководству компании за небольшие, но приятные подарки в виде бесплатных работ по монтажу окон. В дальнейшем планируем сотрудничество с данной компанией, и можем советовать, как добросовестных подрядчиков.</p>
         <ul class="reviews_popup_info"> 
@@ -420,6 +547,11 @@
         <div class="alert_icon">
            <svg class="checkmark" class="test-icon" width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="white" stroke-width="3" stroke-dasharray="100"><circle class="alert__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon-path" id="check" d="M 15,15 L 32,33 M 32,15 L 15,33"></path></svg></div>
       </div>
+    </div>
+    <div class="upLink"> 
+      <svg class="icon icon-prev ">
+        <use xlink:href="i/sprite/sprite.svg#prev"></use>
+      </svg>
     </div>
   </body>
 </html>

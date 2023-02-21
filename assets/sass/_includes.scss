@@ -15,6 +15,9 @@
 @import "templates/popup";
 @import "templates/alert";
 @import "templates/btn";
+@import "templates/application";
+@import "templates/pagination";
+@import "templates/upLink";
 
 
 // icons
@@ -26,8 +29,13 @@
 @import "page/start";
 @import "page/home";
 @import "page/policy";
+@import "page/page-contacts";
+@import "page/page-reviews";
+@import "page/work-single";
+@import "page/page-work";
+@import "page/single-service";
 
 // plugins
 @import "plugins/swiper";
-// @import "plugins/fancybox";
+@import "plugins/fancybox";
 // @import "plugins/simplebar";

@@ -6,6 +6,10 @@
 	@include bp($point_2) {
 		padding: 0 2rem;
 	}
+
+	@include bp($point_8) {
+		padding: 0 1rem;
+	}
 }
 // End Style
 

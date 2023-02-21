@@ -8,65 +8,69 @@ block content_block
 			.hero_main
 				.hero_col_left 
 					ul.hero_list 
-						each item in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
+						each item, i in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
 							li
-								a(href="#" data-title=item)=item  
-				.hero_col_right 
-					.hero_card 
-						h2 Ремонт межпанельных швов
-						.hero_card_txt.global_txt 
-							p Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.
-						.hero_card_bottom
-							.parent_btn
-								+btn({
-									class: 'hero_btn btn-fill',
-									title: 'Заказать услугу'
-								})
-							.parent_btn
-								+btn({
-									class: 'hero_link btn-border',
-									title: 'Подробнее',
-									link: true
-								})
-					.hero_img 
-						img(src="i/home/hero.jpg", alt="")
-	section.ours 
+								a(href="#" data-title=item class="hero_tab_link" data-tab=`heroTab_${i}`)=item  
+				.hero_col_right
+					ul.heroTabContent_list
+						-for(i = 0; i < 7; i++)
+							li.hero_tab_content(data-tab=`heroTab_${i}`) 
+								.hero_card 
+									h2 Ремонт межпанельных швов
+									.hero_card_txt.global_txt 
+										p Lorem ipsum dolor sit amet consectetur. Ipsum a sed cursus sollicitudin. Ut laoreet morbi nibh ut parturient ut nullam. Nibh enim ipsum sit libero ligula rhoncus bibendum. Nisl odio aliquet purus molestie et. Commodo senectus platea odio quam lacinia sodales. Nisl rutrum cursus ornare aliquet vitae. Rutrum tempus elementum facilisi id.
+									.hero_card_bottom
+										.parent_btn
+											+btn({
+												class: 'hero_btn btn-fill trigger',
+												title: 'Заказать услугу'
+											})
+										.parent_btn
+											+btn({
+												class: 'hero_link btn-border',
+												title: 'Подробнее',
+												link: true
+											})
+								.hero_img 
+									img(src="i/home/hero.jpg", alt="")
+	section.ours.animationBlock 
 		.section_in 
-			.ours_main 
-				.ours_head.head-mod 
+			.ours_main.animationEl
+				.ours_head.head-mod
 					h2 Наши преимущества
-				ul.ours_grid 
+				ul.ours_grid.grid-3
 					-for(i = 0; i < 6; i++)
 						- let title = ['Оплата и цены', 'Сервис 24/7', 'Опытные рабочие', 'Выезд специалиста', 'Расчет сметы', 'Рассрочка']
 						- let txt = ['Мы предоставляем беспроцентную рассрочку, обсуждаем условия рассрочки и оплаты с каждым индивидуально. Адекватные цены на работы, без экономии на материалах.', 'С вами на связи будет наш специалист, готовый ответить на ваши вопросы в любое время дня и ночи, так как спокойствие наших клиентов для нас, важнее всего.', 'У нас в штате более 20-ти работников, с большим опытом и высокой квалификацией, имеющие культуру поведения и общения на объекте.', 'Бесплатный и срочный', 'Бесплатный и на следующий день', 'Беспроцентная и индивидуальная']
 							li.ours_item 
 								.ours_item_content 
-									h3=title[i]
+									h3.small-title=title[i]
 									p=txt[i]
-								.ours_item_icon 
-									+icon(`ours-${i}`)
-	section.us 
+								.ours_item_icon_w
+									.ours_item_icon
+										+icon(`ours-${i}`)
+	section.us.animationBlock 
 		.section_in 
 			.us_main 
 				.us_content 
-					.us_content_head 
+					.us_content_head.animationEl 
 						h3 Почему именно МЫ?
 						p Строительная компания "Преображение" не просто делает свою работу качественно и в срок, а Преображает все то, за что берется, в самую лучшую сторону.
-					ul.us_list
+					ul.us_list.grid-2
 						each item in ['Мы всегда готовы вместе с вами посетить наши объекты, посмотреть процесс выполнения работ или уже выполненные нами работы, а также получить отзывы о нас и нашей работе, из первых уст.', 'Мы работаем честно с нашими клиентами, на взаимопонимании и доверии друг к другу, у нас прозрачные договоры и сметы, так как наша главная цель долгосрочное сотрудничество.', 'Мы работаем с 2020-го года, за все время нашего существования, мы зарекомендовали себя как добросовестного подрядчика которому можно доверять.', 'Мы работаем только с качественными стройматериалами проверенными временем, поэтому не боимся давать гарантию на наши работы.']
-							li=item
-				.us_img 
+							li.animationEl=item
+				.us_img.animationEl 
 					img(src="i/home/us.jpg", alt="")
-	section.step 
+	section.step.animationBlock
 		.section_in 
 			.step_main 
-				.step_head 
+				.step_head.animationEl 
 					h4 Работать с нами ЛЕГКО
-				ul.step_list 
+				ul.step_list.grid-4 
 					-for(i = 0; i < 4; i++)
 						- let stepTitle = ['Заявка', 'Смета', 'Работы', 'Результат']
 						- let stepTxt = ['Вы оставляете заявку или звоните нам, наш специалист выезжает к вам для замераи обсуждения деталей', 'Мы составляем смету на работы с учетом материалов, подписываем договор, получаем от вас предоплату', 'Бригада опытных мастеров выполняет работы согласно смете, под руководством нашего технического специалиста', 'После завершения всех работ подписываем АКТ (КС2,КС3); В течение гарантийного срока следим за объектом']
-							li.step_item 
+							li.step_item.animationEl 
 								.step_item_img 
 									img(src=`i/global/step-${i}.svg`)
 								.step_item_content 

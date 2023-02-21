@@ -3,7 +3,8 @@ footer.footer
 		.footer_main
 			.footer_info
 				.footer_logo
-					img(src="i/global/logo.svg", alt="")
+					a(href="#") 
+						img(src="i/global/logo.svg", alt="")
 				.footer_about 
 					a(href="#") Политика конфиденциальности
 					p © 2022 Все права защищены
@@ -20,11 +21,6 @@ footer.footer
 									navLink: '/',
 								},
 								{
-									navTitle: 'Услуги',
-									navLink: '/service.html',
-									submenu: true,
-								},
-								{
 									navTitle: 'Наши работы',
 									navLink: '/work.html',
 								},
@@ -36,6 +32,11 @@ footer.footer
 									navTitle: 'Контакты',
 									navLink: '/contacts.html',
 								},
+								{
+									navTitle: 'Услуги',
+									navLink: '/service.html',
+									submenu: true,
+								},
 							]
 						each item in nav 
 							if item.submenu 
@@ -45,11 +46,14 @@ footer.footer
 										each menuLink in ['Ремонт межпанельных швов', 'Ремонт фасадов и кровли', 'Косметический ремонт любой сложности', 'Ремонт коммерческих помещений', 'Производство и монтаж — окон и дверей', 'Отмостка — асфальтирование — ямочный ремонт', 'Изготовление и монтаж металлических изделий']
 											li 
 												a(href="#")=menuLink
+							else
+								li 
+									a(href=item.navLink)=item.navTitle
 			.footer_contacts 
 				.footer_phone 
 					a(href="#")
 						.footer_phone_icon 
-							+icon('phone')
+							+icon('call')
 						p +7 (812) 649-00-32
 				.footer_mail
 					a(href="#")  

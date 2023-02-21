@@ -6,10 +6,8 @@ img {
 }
 
 h1 {
-	font-size: 5.5rem;
+	font-size: 4.8rem;
 	font-family: $font_3;
-	color: $white;
-	font-weight: 500;
 	@include bp($point_2) {
 		font-size: 3rem;
 	}
@@ -20,6 +18,14 @@ h2, h3, h4, h5, h6 {
 	font-family: $font_2;
 	color: $dark;
 	@include bp($point_2) {
+		font-size: 3.6rem;
+	}
+
+	@include bp($point_4) {
+		font-size: 3rem;
+	}
+
+	@include bp($point_8) {
 		font-size: 2.6rem;
 	}
 }
@@ -28,6 +34,10 @@ h2, h3, h4, h5, h6 {
 	p, ul, ol, span {
 		@include bp($point_2) {
 			font-size: 1.6rem;
+		}
+
+		@include bp($point_8) {
+			font-size: 1.4rem;
 		}
 		&:not(:last-child) {
 			margin-bottom: 2rem;
@@ -40,15 +50,27 @@ h2, h3, h4, h5, h6 {
 		&:not(:last-child) {
 			margin-bottom: 1rem;
 		}
-		padding-left: 1rem;
+		padding-left: 4rem;
 		position: relative;
 		&:before {
 			position: absolute;
+			left: 2rem;
 			top: 50%;
 			transform: translateY(-50%);
-			content: '-';
+			content: '';
+			width: .35rem;
+			height: .35rem;
+			border-radius: 100%;
+			background-color: $dark;
 		}
 	}
 }
 
+
+.global_section {
+	padding-top: 12rem;
+	@include bp($point_2) {
+		padding-top: 4rem;
+	}
+}
 

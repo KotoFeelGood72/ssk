@@ -5,25 +5,41 @@
 	fill: currentColor;
 }
 
-.icon-Vector {
-	font-size:calc(15/10)*1rem;
-	width:calc(15/15)*1em;
-}
 .icon-call {
 	font-size:calc(15/10)*1rem;
 	width:calc(15/15)*1em;
+}
+.icon-call-contacts {
+	font-size:calc(23/10)*1rem;
+	width:calc(23/23)*1em;
 }
 .icon-clock {
 	font-size:calc(14/10)*1rem;
 	width:calc(14/14)*1em;
 }
-.icon-close {
-	font-size:calc(25/10)*1rem;
-	width:calc(25/25)*1em;
+.icon-clock-contacts {
+	font-size:calc(23/10)*1rem;
+	width:calc(23/23)*1em;
+}
+.icon-location {
+	font-size:calc(17/10)*1rem;
+	width:calc(14/17)*1em;
 }
 .icon-mail {
 	font-size:calc(12/10)*1rem;
 	width:calc(15/12)*1em;
+}
+.icon-mail-contacts {
+	font-size:calc(18/10)*1rem;
+	width:calc(23/18)*1em;
+}
+.icon-map {
+	font-size:calc(23/10)*1rem;
+	width:calc(18/23)*1em;
+}
+.icon-next {
+	font-size:calc(12/10)*1rem;
+	width:calc(24/12)*1em;
 }
 .icon-ours-0 {
 	font-size:calc(36/10)*1rem;
@@ -48,6 +64,10 @@
 .icon-ours-5 {
 	font-size:calc(38/10)*1rem;
 	width:calc(38/38)*1em;
+}
+.icon-prev {
+	font-size:calc(12/10)*1rem;
+	width:calc(24/12)*1em;
 }
 .icon-wa {
 	font-size:calc(28/10)*1rem;

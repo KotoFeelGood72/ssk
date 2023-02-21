@@ -8,26 +8,49 @@
 	@include z-index(header);
 	font-size: 2.2rem;
 	background: url('../../i/global/header_bg.svg') center/cover no-repeat;
+	padding: 2rem 0;
+	box-shadow: 0 .4rem 1rem rgba(0, 0, 0, 0.05);
+	@include bp($point_2) {
+		background: url('../../i/global/header_bg.svg') 19%/cover no-repeat;
+		padding: 0;
+		@include flex-center;
+	}
+	@include bp($point_4) {
+		height: $header_mob;
+		background: url('../../i/global/header_bg.svg') 11.5%/cover no-repeat;
+	}
 
+	@include bp($point_8) {
+		height: 8rem;
+		background: url('../../i/global/header_bg.svg') 11%/cover no-repeat;
+	}
+	a {
+		color: $white;
+	}
 }
 
 .custom-mod {
-	.header {
-		background: none;
-		a {
-			color: $white;
-		}
-	}
-	.header_col_right {
-		align-items: flex-start;
-	}
-	.header_logo {
-		margin-right: 19.6rem;
-	}
+	@include bp($point_2, $direction:min) {
 
-	.header_main {
-		padding-top: 5rem;
-		align-items: flex-start
+		.header {
+			background: none;
+			padding: 0;
+			box-shadow: none;
+		}
+		.header_col_right {
+			align-items: flex-start;
+		}
+		.header_logo {
+			margin-right: 15rem;
+			max-width: 100%;
+			max-width: 30.1rem;
+			width: 100%;
+		}
+	
+		.header_main {
+			padding-top: 5rem;
+			align-items: flex-start
+		}
 	}
 
 }
@@ -40,6 +63,14 @@
 	@include flex-space;
 }
 .header_logo {
+	max-width: 16.6rem;
+	@include bp($point_4) {
+		max-width: 15rem;
+	}
+
+	@include bp($point_8) {
+		max-width: 10rem
+	}
 }
 .header_col_right {
 	@include flex-start;
@@ -49,6 +80,9 @@
 .header_nav_list {
 	@include flex-start;
 	margin-right: 6rem;
+	@include bp($point_2) {
+		display: none;
+	}
 	li {
 		&:not(:last-child) {
 			margin-right: 5rem;
@@ -59,6 +93,9 @@
 	display: none;
 }
 .header_info {
+	@include bp($point_4) {
+		display: none;
+	}
 	a {
 		@include flex-start;
 	}
@@ -99,4 +136,41 @@
 
 		margin-right: 15rem;
 	}
+}
+
+
+
+.header_burger_w {
+	display: none;
+	@include bp($point_2) {
+		display: block;
+		padding: 4.7rem 4rem;
+	}
+
+	@include bp($point_4) {
+		margin-right: -2rem;
+	}
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		border-bottom: .4rem solid $white;
+		&:nth-child(2) {
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+		}
+		&:nth-child(3) {
+			top: auto;
+			bottom: 0;
+			right: 0;
+		}
+	}
+}
+
+.header_burger {
+	width: 3rem;
+	height: 2rem;
+	position: relative;
 }

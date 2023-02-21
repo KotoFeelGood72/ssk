@@ -1,21 +1,84 @@
 .burger {
+	padding: 0!important;
+	justify-content: flex-start!important;
 }
 .popup {
-	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: all .3s ease;
+	@include flex-center;
+	opacity: 0;
+	visibility: hidden;
+	@include z-index(popup);
+
+	@include bp($point_2) {
+		padding: 2rem;
+	}
+	&.active {
+		opacity: 1;
+		visibility: visible;
+		.popup_main, .burger_main {
+			transform: translateY(0);
+		}
+	}
 }
-.burger_bg {
+.popup_bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $dark;
+	opacity: .7;
 }
 .remove {
 }
 .burger_main {
+	background-color: $blue;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	color: $white;
+	padding: 4rem;
+	transform: translateY(-10rem);
+	transition: all .4s ease;
+	max-height: 100%;
+	overflow-y: auto;
+
+	@include bp($point_8) {
+		padding: 2rem;
+	}
 }
 .burger_close {
+	position: absolute;
+	top: 4.7rem;
+	right: 4.3rem;
+	width: 2rem;
+	height: 2rem;
+	@include flex-center;
+	color: $white;
+	cursor: pointer;
+	@include bp($point_8) {
+		top: 2.2rem;
+		right: 2rem;
+	}
 }
 .icon {
 }
 .icon-close {
 }
 .burger_head {
+	margin-bottom: 4rem;
+
+	.header_phone, .header_mail {
+		a {
+			@include flex-start;
+			color: $white;
+		}
+	}
 }
 .burger_phone {
 }
@@ -32,42 +95,138 @@
 .burger_nav {
 }
 .burger_nav_list {
+	&>li {
+		color: $white;
+		&.current-item, &:hover {
+			&>a {
+				color: $yellow;
+			}
+		}
+		.sub-menu {
+			display: block;
+			padding: 1rem 0 0 0;
+			li {
+				&.current-item, &:hover {
+					&>a {
+						color: $yellow;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+			}
+			a {
+				font-size: 1.6rem;
+				font-family: $font_1;
+				font-weight: 300;
+			}
+		}
+		a {
+			color: inherit;
+			font-size: 2.2rem;
+			font-family: $font_2;
+		}
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+		}
+	}
 }
 .sub-menu {
 }
 .popup_form {
+	
 }
 .popup_bg {
 }
 .popup_main {
+	background-color: $white;
+	transition: all .3s ease;
+	position: relative;
+	transform: translateY(-5rem);
 }
 .popup_form_main {
+	padding: 6rem 7.7rem;
+	@include bp($point_2) {
+		padding: 4rem 2rem;
+	}
+	h3 {
+		font-size: 2.8rem;
+		color: $blue;
+		margin-bottom: 5rem;
+		text-align: center;
+		@include bp($point_2) {
+			margin-bottom: 3rem;
+		}
+
+		@include bp($point_8) {
+			font-size: 2.4rem;
+		}
+	}
+
+	.application_input {
+		border: .1rem solid $grey;
+		border-radius: 0.5rem;
+	}
 }
 .popup_form_close {
+	position: absolute;
+	top: 0;
+	right: -5rem;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	transition: all .3s ease;
+	@include flex-center;
+	@include bp($point_2) {
+		right: -1rem;
+		top: -1rem;
+	}
+	&:hover {
+		opacity: .7;
+	}
 }
-.application_form {
-}
-.popup_mod_form {
-}
-.form_input_group {
-}
-.global_input {
-}
-.application_input {
-}
-.btn_submit {
-}
-.btn {
-}
-.btn-border {
-}
-.application_notice {
-}
-.reviews_popup {
-}
-.reviews_main {
+
+
+.reviews_popup_main {
+	max-width: 95rem;
+	text-align: left;
+	padding: 6rem 7rem;
+	@include bp($point_4) {
+		max-height: 100%;
+		max-width: 100%;
+		padding: 4rem 1rem 4rem 2rem;
+	}
+
+	p {
+		margin-bottom: 3rem;
+		@include bp($point_2) {
+			max-height: 30rem;
+			overflow-y: auto;
+			padding-right: 2rem;
+		}
+	}
 }
 .reviews_popup_date {
+	font-size: 1.6rem;
+	color: $grey;
+	margin-bottom: 3rem;
+	@include bp($point_4) {
+		margin-bottom: 1.5rem;
+	}
 }
 .reviews_popup_info {
+	font-size: 1.6rem;
+	@include bp($point_8) {
+		font-size: 1.4rem;
+	}
+	li {
+		&:not(:last-child) {
+			margin-bottom: 2rem;
+			@include bp($point_4) {
+				margin-bottom: 0.5rem;
+				padding-bottom: 0.5rem;
+				border-bottom: .1rem solid #00000011;
+			}
+		}
+	}
 }

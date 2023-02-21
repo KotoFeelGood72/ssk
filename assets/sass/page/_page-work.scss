@@ -1,0 +1,144 @@
+.work {
+}
+.global_section {
+}
+.section_in {
+}
+.work_main {
+	margin-bottom: 16rem;
+	@include bp($point_2) {
+		margin-bottom: 12rem;
+	}
+}
+.work_head {
+	margin-bottom: 8rem;
+	@include bp($point_2) {
+		margin-bottom: 5rem;
+	}
+
+	h1 {
+		margin-bottom: 3rem;
+	}
+}
+.work_cat {
+	@include flex-start;
+	flex-wrap: wrap;
+	margin: -1.5rem -1.5rem 0 0;
+	@include bp($point_2) {
+		margin: -1rem -1rem 0 0;
+	}
+	@include bp($point_4) {
+		margin: -.5rem -.5rem 0 0;
+	}
+	li {
+		padding: 1.5rem 1.5rem 0 0;
+		@include bp($point_2) {
+			padding: 1rem 1rem 0 0;
+		}
+		@include bp($point_4) {
+			padding: .5rem .5rem 0 0;
+		}
+		a {
+			background-color: #F0F0F0;
+			display: block;
+			font-size: 1.6rem;
+			padding: 1rem 2rem;
+			border-radius: 0.5rem;
+			color: $grey;
+			@include bp($point_2) {
+				padding: .7rem 1.5rem;
+			}
+			@include bp($point_4) {
+				font-size: 1.4rem;
+			}
+			&:hover, &.current-item {
+				background-color: $yellow;
+				color: $dark;
+			}
+		}
+	}
+}
+.work_grid {
+	grid-gap: 5rem 3rem;
+	margin-bottom: 5rem;
+	@include bp($point_2) {
+		grid-gap: 3rem 2rem;
+	}
+}
+.work_item {
+	a {
+		@include flex-start;
+		box-shadow: 1rem 1.5rem 5rem rgba(0, 0, 0, 0.1);
+		padding: 3rem;
+		position: relative;
+		align-items: flex-start;
+		@include bp($point_2) {
+			flex-direction: column;
+		}
+	}
+}
+.work_item_content {
+	max-width: 30.8rem;
+	margin-right: 6.7rem;
+	@include bp($point_2)  {
+		order: 2;
+		max-width: 100%;
+		margin: 2rem 0 0 0;
+	}
+
+	h3 {
+		font-size: 2.2rem;
+		margin-bottom: 2rem;
+		@include bp($point_2) {
+			font-size: 2rem;
+		}
+	}
+	&>p {
+		font-size: 1.6rem;
+		margin-bottom: 2rem;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 6;
+		max-height: 12.7rem;
+	}
+	p {
+		font-size: 1.6rem;
+	}
+}
+.work_item_address {
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
+}
+.work_itemAddress_icon {
+}
+.icon {
+}
+.icon-address {
+}
+.btn {
+}
+.btn-border {
+}
+.work_item_btn {
+	position: absolute;
+	bottom: 3rem;
+	left: 3rem;
+	@include bp($point_2) {
+		position: static;
+	}
+}
+.work_item_img {
+}
+.pag_block {
+}
+.pag_list {
+}
+.pag_item {
+}
+.pag_link {
+}
+.active_mod {
+}

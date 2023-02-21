@@ -17,11 +17,16 @@
 .btn {
 	border-radius: 0.5rem;
 	overflow: hidden;
+	position: relative;
+
+	@include bp($point_4) {
+		width: 100%;
+	}
 
 	&.btn-fill {
 		a, button, input[type="submit"] {
 			background-color: $blue;
-			color: $white
+			color: $white;
 		}
 
 		&:hover {
@@ -44,6 +49,21 @@
 			}
 		}
 	}
+
+	&.btn-border-white {
+		a, button, input[type="submit"] {
+			background-color: $trans;
+			border: .2rem solid $white;
+			color: $white;
+			line-height: 1.9rem;
+		}
+		&:hover {
+			a, button, input[type="submit"] {
+				background-color: $white;
+				color: $blue
+			}
+		}
+	}
 	a, button, input[type="submit"] {
 		@include flex-center;
 		font-size: 1.6rem;
@@ -53,5 +73,14 @@
 		transition: all .2s ease;
 		border-radius: 0.5rem;
 		color: $blue;
+		cursor: pointer;
+		@include bp($point_4) {
+			width: 100%;
+		}
+
+		@include bp($point_8) {
+			font-size: 1.4rem;
+			padding: .7rem 1.5rem;
+		}
 	}
 }
