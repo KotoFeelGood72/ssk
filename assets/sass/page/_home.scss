@@ -112,7 +112,9 @@
 	}
 }
 .hero_tab_content {
-	@include flex-start;
+	display: none;
+	justify-content: flex-start;
+	align-items: center;
 	position: relative;
 	@include bp($point_2) {
 		flex-direction: column;
@@ -122,9 +124,6 @@
 	
 	&.active_tab {
 		display: flex;
-	}
-	&:not(:first-child) {
-		display: none;
 	}
 }
 .hero_col_right {
@@ -216,6 +215,7 @@
 }
 .hero_img {
 	max-width: 46rem;
+	z-index: 1;
 	filter: drop-shadow(0 1rem 4rem rgba(0, 0, 0, 0.15));
 	@include bp($point_2) {
 		max-width: 100%;

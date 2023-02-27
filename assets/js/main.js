@@ -34,6 +34,7 @@ $(window).on('load', function () {
 	modal();
 	upLinkScroll();
 	testSucces();
+	checkSubmenu();
 
 	if(windowWidth > mediaPoint1) {
 		scrollAnimation();
@@ -426,6 +427,19 @@ Array.from(inputTypeSubmit).map((el) => {
 }
 
 
+function checkSubmenu() {
+	const menuList = document.querySelector('.header_nav_list');
+	let menuItem = menuList.querySelectorAll('li')
+
+	Array.from(menuItem).map((el) => {
+		let checkItems = el.children
+		Array.from(checkItems).map((items) =>{
+			if(items.classList.contains('sub-menu')) {
+				el.classList.add('parent_element_item')
+			}
+		})
+	})
+}
 
 
 
