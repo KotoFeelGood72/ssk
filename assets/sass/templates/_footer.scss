@@ -96,7 +96,7 @@
 			font-size: 1.6rem;
 		}
 		&:not(:last-child) {
-			margin-right: 5rem;
+			margin-right: 3rem;
 			@include bp($point_2) {
 				margin: 0;
 			}
@@ -114,7 +114,7 @@
 					line-height: 2rem;
 				}
 				a {
-					font-size: 1.4rem;
+					font-size: 1.6rem;
 					font-family: $font_1;
 					opacity: .8;
 					&:hover {
